@@ -1,5 +1,5 @@
 import axios from 'axios'
-const baseUrl = '/api/andikas'
+const baseUrl = process.env.REACT_APP_BASE_URL
 
 const getSkills = () => {
     return axios.get(`${baseUrl}/skills`)
